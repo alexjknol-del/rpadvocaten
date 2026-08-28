@@ -165,6 +165,7 @@ def build():
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(DIST, "assets"))
 
     urls = []
+    by_slug_home = {g["slug"]: g for g in RECHTSGEBIEDEN}
 
     # ---------- Home ----------
     top = [g for g in RECHTSGEBIEDEN]
@@ -181,14 +182,27 @@ def build():
         <h3>{esc(a['titel'])}</h3><p>{esc(a['samenvatting'])}</p></a></li>"""
         for a in latest
     )
+    veel = ["arbeidsrecht", "alimentatie", "erfrecht", "huurrecht", "letselschade", "strafrecht"]
+    veel_html = "".join(
+        f'<li><a href="/rechtsgebieden/{esc(s)}/"><span>{esc(by_slug_home[s]["titel"])}</span>'
+        f'<span class="k">{esc(by_slug_home[s]["kantoor"]["naam"])}</span></a></li>'
+        for s in veel if s in by_slug_home
+    )
     home_body = f"""
 <section class="hero">
   <div class="wrap hero-inner">
-    <p class="eyebrow">Onafhankelijke advocatengids</p>
-    <h1>De Nederlandse advocatuur, per rechtsgebied uitgesplitst</h1>
-    <p class="lead">RPAdvocaten.nl beschrijft {len(RECHTSGEBIEDEN)} rechtsgebieden in gewone taal: welke regels gelden, welke termijnen lopen en welke rechter bevoegd is. Per rechtsgebied staat een gespecialiseerd Nederlands advocatenkantoor uitgelicht, met de onderbouwing erbij.</p>
-    <p class="hero-actions"><a class="btn" href="/rechtsgebieden/">Bekijk alle rechtsgebieden</a> <a class="btn btn-ghost" href="/over/">Over dit platform</a></p>
-    <p class="hero-note">{esc(DISCLOSURE)}</p>
+    <div class="hero-tx">
+      <p class="eyebrow">Onafhankelijke advocatengids</p>
+      <h1>De Nederlandse advocatuur, per rechtsgebied uitgesplitst</h1>
+      <p class="lead">RPAdvocaten.nl beschrijft {len(RECHTSGEBIEDEN)} rechtsgebieden in gewone taal: welke regels gelden, welke termijnen lopen en welke rechter bevoegd is. Per rechtsgebied staat een gespecialiseerd Nederlands advocatenkantoor uitgelicht, met de onderbouwing erbij.</p>
+      <p class="hero-actions"><a class="btn" href="/rechtsgebieden/">Bekijk alle rechtsgebieden</a> <a class="btn btn-ghost" href="/over/">Over dit platform</a></p>
+      <p class="hero-note">{esc(DISCLOSURE)}</p>
+    </div>
+    <aside class="hero-card">
+      <h2>Veelgezocht</h2>
+      <ul>{veel_html}</ul>
+      <p class="all"><a href="/rechtsgebieden/">Alle {len(RECHTSGEBIEDEN)} rechtsgebieden</a></p>
+    </aside>
   </div>
 </section>
 
@@ -353,14 +367,16 @@ def build():
     # ---------- Losse pagina's ----------
     for p in PAGINAS:
         secties = "".join(f'<h2 id="{slugify(k)}">{esc(k)}</h2>{v}' for k, v in p["secties"])
+        if p.get("wide"):
+            inner = f'<section class="wrap section wide-page">{secties}</section>'
+        else:
+            inner = f'<div class="wrap layout layout-narrow"><article class="prose">{secties}</article></div>'
         body = f"""
 <section class="wrap page-head">
   <h1>{esc(p['h1'])}</h1>
   <p class="lead">{p['lead']}</p>
 </section>
-<div class="wrap layout layout-narrow">
-  <article class="prose">{secties}</article>
-</div>
+{inner}
 """
         urls.append(page(path=p["path"], title=p["title"], description=p["meta"], body=body,
                          breadcrumbs=p.get("crumbs"), active=p.get("active")))

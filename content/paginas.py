@@ -61,7 +61,7 @@ PAGINAS = [
  ]
 },
 {
- "path":"/kennisbank/","active":"/kennisbank/",
+ "path":"/kennisbank/","active":"/kennisbank/","wide":True,
  "title":"Kennisbank | RPAdvocaten.nl",
  "meta":"Praktische uitleg over het inschakelen van een advocaat: kiezen, kosten en tarieven, gesubsidieerde rechtsbijstand, klachten en juridische begrippen.",
  "h1":"Kennisbank",
@@ -69,12 +69,12 @@ PAGINAS = [
  "crumbs":[("/","Home"),(None,"Kennisbank")],
  "secties":[
   ("Onderwerpen", """
-<ul>
-<li><a href="/kennisbank/advocaat-kiezen/">Een advocaat kiezen</a>: waar specialisatie uit blijkt en welke vragen in een eerste gesprek nuttig zijn.</li>
-<li><a href="/kennisbank/kosten-en-tarieven/">Kosten en tarieven</a>: uurtarief, vaste prijs, griffierecht en proceskostenveroordeling.</li>
-<li><a href="/kennisbank/gesubsidieerde-rechtsbijstand/">Gesubsidieerde rechtsbijstand</a>: de toevoeging, de eigen bijdrage en de inkomensgrenzen.</li>
-<li><a href="/kennisbank/klacht-over-een-advocaat/">Klacht over een advocaat</a>: de kantoorklachtenregeling, de deken en de tuchtrechter.</li>
-<li><a href="/kennisbank/begrippenlijst/">Juridische begrippenlijst</a>: veelgebruikte termen uitgelegd in gewone taal.</li>
+<ul class="grid kb-cards">
+<li><a href="/kennisbank/advocaat-kiezen/"><h3>Een advocaat kiezen</h3><p>Waar specialisatie uit blijkt: het rechtsgebiedenregister, de specialisatieverenigingen, en de vragen die in een eerste gesprek snel duidelijkheid geven.</p></a></li>
+<li><a href="/kennisbank/kosten-en-tarieven/"><h3>Kosten en tarieven</h3><p>Uurtarief, vaste prijs en kantoorkosten, plus griffierecht, deurwaarderskosten en de proceskostenveroordeling.</p></a></li>
+<li><a href="/kennisbank/gesubsidieerde-rechtsbijstand/"><h3>Gesubsidieerde rechtsbijstand</h3><p>De toevoeging, de eigen bijdrage, de inkomens- en vermogensgrenzen en de controle achteraf.</p></a></li>
+<li><a href="/kennisbank/klacht-over-een-advocaat/"><h3>Klacht over een advocaat</h3><p>De kantoorklachtenregeling, de deken, de tuchtrechter en de route bij een geschil over de declaratie.</p></a></li>
+<li><a href="/kennisbank/begrippenlijst/"><h3>Juridische begrippenlijst</h3><p>Verzuim, stuiting, verval, beschikking, executoriale titel en andere termen, uitgelegd in gewone taal.</p></a></li>
 </ul>""")
  ]
 },
