@@ -40,8 +40,7 @@ FOOTER_LEGAL = [
 DISCLOSURE = (
     "RPAdvocaten.nl is een onafhankelijke gids en heeft geen samenwerking, "
     "eigendomsrelatie of andere binding met de genoemde advocatenkantoren. "
-    "Opname is niet te koop en kantoren betalen niet voor vermelding. "
-    "Alle links naar kantoren zijn nofollow."
+    "Opname is niet te koop en kantoren betalen niet voor vermelding."
 )
 
 def esc(s):
@@ -154,7 +153,6 @@ def firm_card(k, gebied):
   <ul class="firm-why">{waarom}</ul>
   <p class="firm-link"><a class="btn" href="{esc(k['url'])}" rel="nofollow noopener" target="_blank">{esc(k['anchor'])}</a></p>
   <p class="firm-url">{esc(k['url'])}</p>
-  <p class="firm-disclose">{esc(DISCLOSURE)}</p>
 </aside>"""
 
 
@@ -196,7 +194,6 @@ def build():
       <h1>De Nederlandse advocatuur, per rechtsgebied uitgesplitst</h1>
       <p class="lead">RPAdvocaten.nl beschrijft {len(RECHTSGEBIEDEN)} rechtsgebieden in gewone taal: welke regels gelden, welke termijnen lopen en welke rechter bevoegd is. Per rechtsgebied staat een gespecialiseerd Nederlands advocatenkantoor uitgelicht, met de onderbouwing erbij.</p>
       <p class="hero-actions"><a class="btn" href="/rechtsgebieden/">Bekijk alle rechtsgebieden</a> <a class="btn btn-ghost" href="/over/">Over dit platform</a></p>
-      <p class="hero-note">{esc(DISCLOSURE)}</p>
     </div>
     <aside class="hero-card">
       <h2>Veelgezocht</h2>
@@ -253,7 +250,6 @@ def build():
 <section class="wrap page-head">
   <h1>Rechtsgebieden</h1>
   <p class="lead">{len(RECHTSGEBIEDEN)} rechtsgebieden binnen het Nederlandse recht, elk met de belangrijkste regels, termijnen en procedures. Per rechtsgebied staat een gespecialiseerd advocatenkantoor uitgelicht.</p>
-  <p class="notice">{esc(DISCLOSURE)}</p>
 </section>
 <section class="wrap section"><ul class="grid gcards">{rows}</ul></section>
 """

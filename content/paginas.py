@@ -24,8 +24,7 @@ PAGINAS = [
 <p>Bij elk uitgelicht kantoor staat waarom het genoemd wordt. Die punten komen van de eigen website van het kantoor of uit openbare registers en zijn na te lopen.</p>"""),
   ("Geen betaalde plaatsing", """
 <p>Vermelding op RPAdvocaten.nl is niet te koop. Er bestaat geen samenwerking, eigendomsrelatie of andere binding met de genoemde kantoren. De kantoren betalen niet voor opname, hebben geen invloed op de tekst en zijn niet vooraf om toestemming gevraagd.</p>
-<p>Verzoeken om tegen betaling te worden opgenomen, worden niet gehonoreerd. Dat geldt ook voor verzoeken om links te plaatsen, teksten te laten aanleveren of een vermelding te laten uitbreiden in ruil voor een tegenprestatie.</p>
-<p>Alle links naar kantoren zijn voorzien van het kenmerk nofollow. Dat is een technische instructie waarmee de link geen invloed uitoefent op de posities van die website in zoekmachines. Zo blijft de verwijzing een aanbeveling voor lezers, en geen ruilmiddel.</p>"""),
+<p>Verzoeken om tegen betaling te worden opgenomen, worden niet gehonoreerd. Dat geldt ook voor verzoeken om een vermelding te laten uitbreiden of teksten te laten aanleveren in ruil voor een tegenprestatie.</p>"""),
   ("Wat dit platform niet is", """
 <p>RPAdvocaten.nl is geen advocatenkantoor en geeft geen juridisch advies. De teksten beschrijven algemene regels; wat in een concrete zaak geldt, hangt af van feiten en omstandigheden die alleen een advocaat kan beoordelen.</p>
 <p>Het platform bemiddelt niet, verwijst niet actief door en ontvangt geen vergoeding voor contacten die via de site tot stand komen. Er is geen contactformulier; wie contact zoekt met een kantoor, benadert dat kantoor rechtstreeks.</p>"""),
@@ -55,7 +54,7 @@ PAGINAS = [
   ("Waarvoor dit adres niet bedoeld is", """
 <p>RPAdvocaten.nl is geen advocatenkantoor en beantwoordt geen juridische vragen. Er wordt niet meegelezen in dossiers, geen advies gegeven en niet bemiddeld naar een kantoor.</p>
 <p>Wie juridische bijstand nodig heeft, benadert een kantoor rechtstreeks. De pagina <a href="/kennisbank/advocaat-kiezen/">een advocaat kiezen</a> beschrijft waar bij die keuze op te letten valt.</p>
-<p>Verzoeken om tegen betaling te worden opgenomen, om links te plaatsen of om aangeleverde teksten te publiceren, worden niet in behandeling genomen.</p>"""),
+<p>Verzoeken om tegen betaling te worden opgenomen of om aangeleverde teksten te publiceren, worden niet in behandeling genomen.</p>"""),
   ("Spoed", """
 <p>Bij een aanhouding, een dreigende ontruiming, een aflopende beroepstermijn of een ander spoedeisend probleem is contact met een advocatenkantoor de enige zinvolle stap. Veel kantoren zijn telefonisch bereikbaar en een deel biedt een kosteloos eerste gesprek. Bij een aanhouding heeft een verdachte recht op bijstand van een advocaat voorafgaand aan en tijdens het politieverhoor.</p>""")
  ]
@@ -309,8 +308,8 @@ PAGINAS = [
 <p>De pagina's zijn opgebouwd uit statische bestanden en een eigen stylesheet. Er draait geen scriptcode die gegevens opslaat of doorstuurt.</p>"""),
   ("Waarom er geen banner staat", """
 <p>Voor cookies en vergelijkbare technieken geldt op grond van de Telecommunicatiewet een toestemmingsvereiste. Dat vereiste komt pas in beeld zodra er daadwerkelijk gegevens op een apparaat worden geplaatst of uitgelezen. Omdat dat hier niet gebeurt, is toestemming niet aan de orde en zou een banner alleen ruis toevoegen.</p>"""),
-  ("Externe links", """
-<p>Deze website verwijst naar websites van advocatenkantoren en instanties. Zodra een bezoeker zo'n link volgt, gelden de cookie- en privacyregels van die andere website. Daarop heeft RPAdvocaten.nl geen invloed.</p>"""),
+  ("Websites van derden", """
+<p>Deze website verwijst naar websites van advocatenkantoren en instanties. Zodra een bezoeker daarnaartoe gaat, gelden de cookie- en privacyregels van die andere website. Daarop heeft RPAdvocaten.nl geen invloed.</p>"""),
   ("Technische gegevens bij het opvragen van een pagina", """
 <p>Elke website ontvangt bij een bezoek onvermijdelijk technische verzoekgegevens, waaronder het IP-adres en het type browser. Die gegevens zijn nodig om de pagina te kunnen leveren en om misbruik te weren. Ze worden niet gebruikt om een profiel op te bouwen. Meer daarover staat in het <a href="/privacybeleid/">privacybeleid</a>.</p>""")
  ]
@@ -328,14 +327,14 @@ PAGINAS = [
 <p>Aan de inhoud kunnen geen rechten worden ontleend. Handelen of nalaten op basis van deze website gebeurt voor eigen rekening en risico. Bij een lopende termijn of een dreigende procedure is contact met een advocaat de aangewezen stap.</p>"""),
   ("Geen affiliatie", """
 <p>RPAdvocaten.nl heeft geen samenwerking, eigendomsrelatie of andere binding met de op deze website genoemde advocatenkantoren. De kantoren betalen niet voor vermelding, hebben geen invloed op de teksten en zijn niet vooraf om toestemming gevraagd.</p>
-<p>Opname is niet te koop. Verzoeken om tegen betaling te worden opgenomen of om links te plaatsen, worden niet gehonoreerd. Alle uitgaande links naar kantoren zijn voorzien van het kenmerk nofollow.</p>"""),
+<p>Opname is niet te koop. Verzoeken om tegen betaling te worden opgenomen, worden niet gehonoreerd.</p>"""),
   ("Actualiteit", """
 <p>Wetgeving en rechtspraak veranderen. Elke pagina geeft de stand van zaken weer op het moment van schrijven en wordt periodiek nagelopen. Het is desondanks mogelijk dat een regeling inmiddels is gewijzigd of dat een kantoor is verhuisd of van naam veranderd.</p>
 <p>Onjuistheden kunnen worden gemeld via <a href="mailto:info@rpadvocaten.nl">info@rpadvocaten.nl</a>. Meldingen worden nagelopen en waar nodig verwerkt.</p>"""),
-  ("Externe websites", """
-<p>Deze website bevat links naar websites van derden. RPAdvocaten.nl heeft geen zeggenschap over de inhoud, de beschikbaarheid of het privacybeleid van die websites en aanvaardt daarvoor geen aansprakelijkheid.</p>"""),
+  ("Websites van derden", """
+<p>Deze website verwijst naar websites van derden. RPAdvocaten.nl heeft geen zeggenschap over de inhoud, de beschikbaarheid of het privacybeleid van die websites en aanvaardt daarvoor geen aansprakelijkheid.</p>"""),
   ("Auteursrecht", """
-<p>De teksten en de vormgeving van deze website zijn auteursrechtelijk beschermd. Overname van substantiele delen zonder toestemming is niet toegestaan. Citeren met bronvermelding en een link naar de betreffende pagina is toegestaan.</p>
+<p>De teksten en de vormgeving van deze website zijn auteursrechtelijk beschermd. Overname van substantiele delen zonder toestemming is niet toegestaan. Citeren met bronvermelding en een verwijzing naar de betreffende pagina is toegestaan.</p>
 <p>Namen van advocatenkantoren worden uitsluitend beschrijvend gebruikt om naar het betreffende kantoor te verwijzen. Merkrechten berusten bij de betreffende houders.</p>""")
  ]
 },
