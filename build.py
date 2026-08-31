@@ -219,7 +219,7 @@ def build():
     <ol class="steps">
       <li><h3>Selectie op specialisatie</h3><p>Per rechtsgebied wordt gezocht naar een kantoor met aantoonbare focus: lidmaatschap van een specialisatievereniging, registratie in het rechtsgebiedenregister van de Nederlandse orde van advocaten, gepubliceerde vakinhoud of een praktijk die zich tot dat gebied beperkt.</p></li>
       <li><h3>Onderbouwing zichtbaar</h3><p>Bij elk uitgelicht kantoor staat waarom het genoemd wordt. Die punten zijn afkomstig van de eigen website van het kantoor of uit openbare registers, en zijn na te lopen.</p></li>
-      <li><h3>Geen betaalde plaatsing</h3><p>Vermelding is niet te koop. Er bestaat geen commerciele of andere band met de genoemde kantoren, en verzoeken tot opname tegen betaling worden niet gehonoreerd.</p></li>
+      <li><h3>Bijgehouden en corrigeerbaar</h3><p>Wetgeving verandert en kantoren verhuizen. Elke pagina beschrijft de stand van zaken op het moment van schrijven en wordt periodiek nagelopen. Onjuistheden kunnen worden gemeld en worden verwerkt.</p></li>
     </ol>
   </div>
 </section>
