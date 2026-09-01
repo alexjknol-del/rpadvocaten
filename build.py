@@ -38,9 +38,8 @@ FOOTER_LEGAL = [
 ]
 
 DISCLOSURE = (
-    "RPAdvocaten.nl is een onafhankelijke gids en heeft geen samenwerking, "
-    "eigendomsrelatie of andere binding met de genoemde advocatenkantoren. "
-    "Opname is niet te koop en kantoren betalen niet voor vermelding."
+    "RPAdvocaten.nl is een onafhankelijke gids. Er bestaan geen samenwerkingen met "
+    "advocatenkantoren, opname is niet te koop en kantoren betalen niet voor vermelding."
 )
 
 def esc(s):
