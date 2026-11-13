@@ -20,6 +20,7 @@ MENU = [
     ("/kennisbank/", "Kennisbank"),
     ("/over/", "Over"),
     ("/contact/", "Contact"),
+    ("/partners/", "Partners"),
 ]
 
 FOOTER_KENNIS = [

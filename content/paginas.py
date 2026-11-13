@@ -3,6 +3,20 @@ H = "/"
 
 PAGINAS = [
 {
+ "path":"/partners/","active":"/partners/",
+ "title":"Partners | RPAdvocaten.nl",
+ "meta":"Externe bronnen over het Nederlandse recht en rechtsbijstand waar RPAdvocaten.nl naar verwijst.",
+ "h1":"Partners",
+ "lead":"RPAdvocaten.nl verwijst hier naar externe bronnen over het Nederlandse recht en rechtsbijstand.",
+ "crumbs":[("/","Home"),(None,"Partners")],
+ "secties":[
+  ("Rechtspraak.nl", """
+<p>Rechtspraak.nl publiceert uitspraken en legt per instantie uit hoe een procedure verloopt. <a href="https://www.rechtspraak.nl" rel="noopener" target="_blank">Rechtspraak.nl</a></p>"""),
+  ("Het Juridisch Loket", """
+<p>Het Juridisch Loket geeft kosteloos eerste juridische informatie aan particulieren. <a href="https://www.juridischloket.nl" rel="noopener" target="_blank">Het Juridisch Loket</a></p>""")
+ ]
+},
+{
  "path":"/over/","active":"/over/",
  "title":"Over RPAdvocaten.nl | Onafhankelijke advocatengids",
  "meta":"Wat RPAdvocaten.nl is, hoe kantoren worden geselecteerd, waarom vermelding niet te koop is en hoe correcties worden verwerkt.",
